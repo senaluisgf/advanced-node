@@ -1,0 +1,15 @@
+# This is Git's per-user configuration file.
+[user]
+	email = sena.luisgf@gmail.com
+	name = Luis 'Shadow' Sena
+# Please adapt and uncomment the following lines:
+#	name = senaluisgf
+#	email = senaluisgf@senaluisgf-desktop.(none)
+[core]
+	editor = code --wait
+[alias]
+	s = !git status -s
+	c = !git add . && git commit -m
+	amend = !git add . && git commit --amend --no-edit
+	l = !git log --pretty=format:'%C(blue)%h%C(red)%d %C(white)%s %C(cyan)[%cn] %C(green)%cr'
+	save = !git stash save -u
